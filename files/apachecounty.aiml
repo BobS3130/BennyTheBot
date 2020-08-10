@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<!--<topic name="APACHE">-->
+
+<!-- BEGIN: Apache County -->
+
+<category>
+    <pattern>APACHECOUNTY</pattern>
+<template>
+    <think><set name="county">Apache County</set></think>
+    There are 2 senior centers in the NACOG network in Apache County, 
+Please CLICK on the center you would like to visit
+<button>
+   <text>Springerville/Round Valley</text>
+      <postback>Springerville</postback>
+</button>
+    <button>
+        <text>St. Johns</text>
+        <postback>StJohns</postback>
+    </button>
+</template></category>  
+
+<!-- BEGIN: postback for Springerville / Round Valley -->
+<category>
+    <pattern>Springerville</pattern>
+<template>
+    Springerville / Round Valley Senior<br/>
+    356 S. Papago St.<br/>
+    Springerville, AZ 85938<br/>
+    (928) 333-2516
+<button>
+    <text>Click Here for a map to Springerville / Round Valley Senior Center</text>
+    <url>https://goo.gl/maps/vrKcWZXQAbgBte3x9</url>
+</button>    
+</template>
+</category>
+<category>
+    <pattern>ROUND VALLEY</pattern>
+<template>
+    Springerville / Round Valley Senior<br/>
+    356 S. Papago St.<br/>
+    Springerville, AZ 85938<br/>
+    (928) 333-2516
+<button>
+    <text>Click Here for a map to Springerville / Round Valley Senior Center</text>
+    <url>https://goo.gl/maps/vrKcWZXQAbgBte3x9</url>
+</button>    
+</template>
+</category>
+<!-- END: postback for Springerville/Round Valley -->
+<!-- BEGIN: postback for St Johns -->
+<category>
+    <pattern>StJohns</pattern>
+<template>
+    St. Johns Senior Center<br/>
+    395 S. 1st St. W<br/>
+    St. Johns, AZ 85936<br/>
+    (928) 337-2144
+<button>
+    <text>Click Here for a map to St. Johns Senior Center</text>
+    <url>https://goo.gl/maps/MGwVVNXdMPo</url>
+</button>    
+</template>
+</category>
+<category>
+    <pattern>^ St^ Johns ^</pattern>
+<template>
+    St. Johns Senior Center<br/>
+    395 S. 1st St. W<br/>
+    St. Johns, AZ 85936<br/>
+    (928) 337-2144
+<button>
+    <text>Click Here for a map to St. Johns Senior Center</text>
+    <url>https://goo.gl/maps/MGwVVNXdMPo</url>
+</button>    
+</template>
+</category>
+<!-- END: postback for Springerville/Round Valley -->
+<!-- END: Apache County -->
+<!-- BEGIN: Show Low Office -->
+ <category>
+     <pattern>^ SHOW LOW ^</pattern>
+     <template>
+         The closest office to you is our Show Low office located at<br/>
+         1801 W Deuce of Clubs<br/>Show Low, AZ 85901
+         <button>
+             <text>Click Here for a map to the Show Low office.</text>
+             <url>
+                 https://nacog.org/departments/AAA/page/office_locations.html
+             </url>
+         </button>
+     </template>
+ </category>
+<!-- END: Apache County -->
+<!-- BEGIN: senior center locations -->
+<category>
+    <pattern>^ APACHE COUNTY ^</pattern>
+<template>
+    <think><set name="county">Apache County</set></think>
+    There are 2 senior centers in the NACOG network in Apache County, 
+Please CLICK on the center you would like to visit
+<button>
+   <text>Springerville/Round Valley</text>
+      <postback>Springerville</postback>
+</button>
+    <button>
+        <text>St. Johns</text>
+        <postback>StJohns</postback>
+    </button>
+</template></category>  
+
+<!-- BEGIN: postback for Springerville / Round Valley -->
+<category>
+    <pattern>Springerville</pattern>
+<template>
+    Springerville / Round Valley Senior<br/>
+    356 S. Papago St.<br/>
+    Springerville, AZ 85938<br/>
+    (928) 333-2516
+<button>
+    <text>Click Here for a map to Springerville / Round Valley Senior Center</text>
+    <url>https://goo.gl/maps/vrKcWZXQAbgBte3x9</url>
+</button>    
+</template>
+</category>
+<category>
+    <pattern>ROUND VALLEY</pattern>
+<template>
+    Springerville / Round Valley Senior<br/>
+    356 S. Papago St.<br/>
+    Springerville, AZ 85938<br/>
+    (928) 333-2516
+<button>
+    <text>Click Here for a map to Springerville / Round Valley Senior Center</text>
+    <url>https://goo.gl/maps/vrKcWZXQAbgBte3x9</url>
+</button>    
+</template>
+</category>
+<!-- END: postback for Springerville/Round Valley -->
+<!-- BEGIN: postback for St Johns -->
+<category>
+    <pattern>StJohns</pattern>
+<template>
+    St. Johns Senior Center<br/>
+    395 S. 1st St. W<br/>
+    St. Johns, AZ 85936<br/>
+    (928) 337-2144
+<button>
+    <text>Click Here for a map to St. Johns Senior Center</text>
+    <url>https://goo.gl/maps/MGwVVNXdMPo</url>
+</button>    
+</template>
+</category>
+<category>
+    <pattern>^ St^ Johns ^</pattern>
+<template>
+    St. Johns Senior Center<br/>
+    395 S. 1st St. W<br/>
+    St. Johns, AZ 85936<br/>
+    (928) 337-2144
+<button>
+    <text>Click Here for a map to St. Johns Senior Center</text>
+    <url>https://goo.gl/maps/MGwVVNXdMPo</url>
+</button>    
+</template>
+</category>
+<!-- END: postback for Springerville/Round Valley -->
+<!-- END: Apache County -->
+<!-- BEGIN: Show Low Office -->
+ <category>
+     <pattern>^ SHOW LOW ^</pattern>
+     <template>
+         The closest office to you is our Show Low office located at<br/>
+         1801 W Deuce of Clubs<br/>Show Low, AZ 85901
+         <button>
+             <text>Click Here for a map to the Show Low office.</text>
+             <url>
+                 https://nacog.org/departments/AAA/page/office_locations.html
+             </url>
+         </button>
+     </template>
+ </category>
+
+<category>
+   <pattern>^ SPRINGERVILLE ^ </pattern>
+   <template>
+      <srai>SPRINGERVILLE</srai>
+   </template>
+</category>
+<!-- END: senior center locations -->
+<!--</topic>-->
+
+</aiml>

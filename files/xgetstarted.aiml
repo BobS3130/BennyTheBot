@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<!-- BEGIN: START page -->
+<!-- BEGIN: START page -->
+<category>
+<pattern>START</pattern>
+<template>
+<!-- BEGIN: set variables -->
+<think><set name="centername">unknown</set></think>    
+<think><set name="countyname">unknown</set></think>
+<think><set name="countynames">unknown</set></think>
+<think><set name="SearchQuestion01">unknown</set></think>  
+<think><set name="zipcode">unknown</set></think>    
+<think><set name="city">unknown</set></think>   
+<think><set name="county">unknown</set></think>
+<think><set name="Fname">unknown</set></think>
+<think><set name="Fname1">unknown</set></think>
+<think><set name="Lname">unknown</set></think>
+<think><set name="topic">unknown</set></think>
+<think><set name="time">unknown</set></think>
+
+<!-- END: set variables -->
+<!-- BEGIN: set greeting -->
+<think><set name="time"><date locale="en_US" timezone="-7" format="%H" /></set></think>
+<condition name="time"> 
+<li value = " "><think><set name="tod">Hello, </set></think></li>
+<li value = "01"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "02"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "03"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "04"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "05"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "06"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "07"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "08"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "09"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "10"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "11"><think><set name="tod">Good Morning, </set></think></li>
+<li value = "12"><think><set name="tod">Good Afternoon, </set></think></li>
+<li value = "13"><think><set name="tod">Good Afternoon, </set></think></li>
+<li value = "14"><think><set name="tod">Good Afternoon, </set></think></li>
+<li value = "15"><think><set name="tod">Good Afternoon, </set></think></li>
+<li value = "16"><think><set name="tod">Good Afternoon, </set></think></li>
+<li value = "17"><think><set name="tod">Good Afternoon, </set></think></li>
+<li value = "18"><think><set name="tod">Good Evening, </set></think></li>
+<li value = "19"><think><set name="tod">Good Evening, </set></think></li>
+<li value = "20"><think><set name="tod">Good Evening, </set></think></li>
+<li value = "21"><think><set name="tod">Good Evening, </set></think></li>
+<li value = "22"><think><set name="tod">Good Evening, </set></think></li>
+<li value = "23"><think><set name="tod">Good Evening, </set></think></li>
+<li value = "24"><think><set name="tod">Good Morning, </set></think></li>
+</condition>
+<!-- END: set greeting -->
+<!-- BEGIN: show 1st greeting -->
+  <b><get name="tod"></get></b><br></br>
+
+
+<!-- BEGIN: Find County -->
+    <button>
+        <text>APACHE COUNTY</text>
+        <postback>Apache</postback>
+    </button>
+    <button>
+        <text>COCONINO COUNTY</text>
+        <postback>Coconino</postback>
+    </button>
+        <button>
+        <text>NAVAJO COUNTY</text>
+        <postback>Navajo</postback>
+    </button>
+    <button>
+        <text>YAVAPAI COUNTY</text>
+        <postback>Yavapai</postback>
+    </button>
+    <button></button>
+    <button>
+  <text>Would you like us to contact you?</text>
+  <url>https://www.nacog.org/departments/AAA/page/email_us.html</url>
+</button> 
+<button>
+  <text>Employment Opportunities</text>
+  <url>https://www.nacog.org/departments/Human-Resources/page/employment-opportunities.html</url>
+</button>
+<!-- END: Find County -->
+<!-- begin: FREE MASKS button -->
+<button>
+  <text>need <b>Free Masks</b> please click here</text>
+  <url>https://www.nacog.org/departments/AAA/page/freemasks.html</url>
+</button>
+<!-- end: FREE MASKS button -->
+</template>
+</category>
+
+
+</aiml>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+
+
+
+<!-- BEGIN: Apache County -->
+<category>
+<pattern>$APACHE</pattern>
+<template>
+    <think><set name="topic">Apache</set></think>
+    <think><set name="county">Apache</set></think>
+<condition name="city">
+<li value="unknown">
+  OK, <get name="topic"/> County<br/>
+  What can I help you with?
+</li>
+<li>
+OK, <get name="city"/><br/>
+What can I help you with?    
+</li>
+  Please click on a subject below.
+</condition>
+  <button>
+  <text>Senior Center Locations</text>
+  <postback>ApacheCounty</postback>
+</button>
+<button>
+  <text>Nutrition Programs</text>
+  <postback>nutrition</postback>
+</button>  
+  <button>
+  <text>AAA Office Locations</text>
+  <postback>SHOW LOW</postback>
+</button>
+  <button>
+  <text>Medicare Questions</text>
+  <postback>medicare</postback>
+</button>
+  <button>
+  <text>Legal Aid</text>
+  <postback>legal</postback>
+</button>
+  <button>
+  <text>Health and Wellness Programs</text>
+  <postback>health and wellness Programs</postback>
+</button>
+
+</template>
+</category>
+<!-- END: Apache County -->
+
+<!-- BEGIN: Coconino County -->
+<category>
+<pattern>COCONINO</pattern>
+<template>
+    <think><set name="topic">COCONINO</set></think>
+    <think><set name="county">COCONINO</set></think>    
+ <condition name="city">
+ <li value="unknown"> 
+  OK, What can I help you with?
+  Please click on a subject below.
+<button>
+  <text>Senior Center Locations</text>
+  <postback>COCONINOCOUNTY</postback>
+</button>
+<button>
+  <text>Nutrition Programs</text>
+  <postback>nutrition</postback>
+</button>  
+  <button>
+  <text>AAA Office Locations</text>
+  <postback>COCONINO COUNTY OFFICE LOCATION</postback>
+</button>
+  <button>
+  <text>Medicare Questions</text>
+  <postback>medicare</postback>
+</button>
+  <button>
+  <text>Legal Aid</text>
+  <postback>legal</postback>
+</button>
+  <button>
+  <text>Health and Wellness Programs</text>
+  <postback>health and wellness Programs</postback>
+</button>
+</li>
+</condition>
+
+</template>
+</category>
+<!-- END: Coconino County -->
+
+<!-- BEGIN: Navajo County -->
+<category>
+<pattern>Navajo</pattern>
+<template>
+    <think><set name="topic">NAVAJO</set></think>
+    <think><set name="county">NAVAJO</set></think>
+ <condition name="city">
+ <li value="unknown"> 
+  OK, What can I help you with?<br/>
+  Please click on a subject below.
+<button>
+  <text>Senior Center Locations</text>
+  <postback>NavajoCounty</postback>
+</button>
+<button>
+  <text>Nutrition Programs</text>
+  <postback>nutrition</postback>
+</button>  
+  <button>
+  <text>AAA Office Locations</text>
+  <postback>SHOW LOW</postback>
+</button>
+  <button>
+  <text>Medicare Questions</text>
+  <postback>medicare</postback>
+</button>
+  <button>
+  <text>Legal Aid</text>
+  <postback>legal</postback>
+</button>
+  <button>
+  <text>Health and Wellness Programs</text>
+  <postback>health and wellness Programs</postback>
+</button>
+</li>
+</condition>
+
+</template>
+</category>
+<!-- END: Navajo County -->
+
+<!-- BEGIN: Yavapai County -->
+<category>
+<pattern>Yavapai</pattern>
+<template>
+    <think><set name="topic">YAVAPAI</set></think>
+    <think><set name="county">YAVAPAI</set></think>
+ <condition name="city">
+ <li value="unknown"> 
+  OK, What can I help you with?<br/>
+  Please click on a subject below.
+  <button>
+  <text>Senior Center Locations</text>
+  <postback>YavapaiCounty</postback>
+</button>
+<button>
+  <text>Nutrition Programs</text>
+  <postback>nutrition</postback>
+</button> 
+  <button>
+  <text>AAA Office Locations</text>
+  <postback>yavapai office locations</postback>
+</button>
+  <button>
+  <text>Medicare Questions</text>
+  <postback>medicare</postback>
+</button>
+  <button>
+  <text>Legal Aid</text>
+  <postback>legal</postback>
+</button>
+  <button>
+  <text>Health and Wellness Programs</text>
+  <postback>health and wellness Programs</postback>
+</button>
+</li>
+</condition>
+
+</template>
+</category>
+<!-- END: Yavapai County -->
+
+</aiml>

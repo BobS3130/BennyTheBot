@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+<!-- END: test question -->
+  <category>
+    <pattern>*</pattern>
+    <template>You are interacting with an automated question answering chatbot, NOT A HUMAN so I cannot answer typed questions.<br />Please use the provided subject buttons
+    or you can<br /> <a href="https://nacog.org/departments/AAA/page/email_us.html">CLICK HERE</a> to send an email to us.
+
+    <!-- BEGIN: Find County -->
+    
+    
+
+    <button>
+        <text>APACHE COUNTY</text>
+        <postback>apache</postback>
+    </button>
+    <button>
+        <text>COCONINO COUNTY</text>
+        <postback>Coconino</postback>
+    </button>
+        <button>
+        <text>NAVAJO COUNTY</text>
+        <postback>Navajo</postback>
+    </button>
+    <button>
+        <text>YAVAPAI COUNTY</text>
+        <postback>Yavapai</postback>
+    </button>
+    
+<!-- END: Find County -->
+    </template>
+  </category>
+</aiml>
